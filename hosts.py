@@ -51,7 +51,7 @@ def get_host_detail(conn, host):
 
 def main():
     parser = parse_args()
-    with get_conn(host='192.168.100.50', user='yunwei', passwd='xingluo@)!^', db='ansible') as conn:
+    with get_conn(host='127.0.0.1', user='user', passwd='passwd', db='ansible') as conn:
         if parser.list:
             hosts = list_all_hosts(conn)
             print(to_json(hosts))
